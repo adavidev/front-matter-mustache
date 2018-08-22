@@ -1,0 +1,33 @@
+{
+  "name": "front-matter-mustache",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adavidev/front-matter-mustache.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adavidev/front-matter-mustache/issues"
+  },
+  "homepage": "https://github.com/adavidev/front-matter-mustache#readme",
+  "devDependencies": {
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "front-matter": "^2.3.0",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.0.11",
+    "lodash": "^4.17.10",
+    "showdown": "^1.8.6"
+  }
+}
