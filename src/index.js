@@ -1,4 +1,3 @@
-import * as fs from 'fs';
 import fm from "front-matter";
 import Handlebars from "handlebars";
 import showdown from "showdown";
@@ -6,21 +5,6 @@ import showdown from "showdown";
 var FmTester = function() {
     return {
         constructor : function() {
-        },
-        fmContent : function() {
-            if (!this.content){
-                this.content = {};
-            }
-
-            return this.content;
-        },
-        setFmContent: function(newFm) {
-            if (!this.content){
-                this.content = {};
-            }
-            this.content = newFm;
-
-            return this.content;
         },
         convert : function(data) {
 
@@ -33,9 +17,9 @@ var FmTester = function() {
 
             //showdown
             var converter = new showdown.Converter();
-            this.setFmContent(converter.makeHtml(rendered))
+            var output = converter.makeHtml(rendered)
 
-            return this.fmContent();
+            return output;
         },
     }
 }
