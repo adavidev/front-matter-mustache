@@ -1,6 +1,6 @@
 Using front-matter and handlebars, we can create markdown files with variables listed first organizationally.
 
-An example index page for this can be found in the index/dist.html
+An example index page for this can be found in the dist/index.html
 
 Here is an example of what is available to do in a markdown file with the addition of handlebars and front-matter.
 
